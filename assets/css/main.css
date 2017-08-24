@@ -22,8 +22,9 @@
 		display: block;
 	}
 
-	body {
+	html, body {
 		line-height: 1;
+		height: 100%;
 	}
 
 	ol, ul {
@@ -3173,6 +3174,7 @@
 		transition: opacity 0.5s ease;
 		opacity: 1;
 		padding-top: 3em;
+		height: 100%;
 	}
 
 		#page-wrapper:before {
@@ -3603,6 +3605,24 @@
 		opacity: 1;
 	}
 
+
+/* Card */
+
+#card {
+	padding: 0 0 0 0 ;
+	position: relative;
+	top: 50%;
+	z-index: 10000;
+}
+
+#card > span {
+	padding: 1em 1em 0em 1em;
+	background: rgba(8, 8, 8, 0.25);
+	position: relative;
+	right: 30%;
+	display: inline-block;
+}
+
 /* CTA */
 
 	#cta .inner {
@@ -3665,17 +3685,8 @@
 
 /* Main */
 
-	#main > header {
-		padding: 12em 0 10em 0 ;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bg.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bg.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bg.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bg.jpg");
-		background-attachment: fixed;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		text-align: center;
+	#main {
+		height: 100%;
 	}
 
 		#main > header h2 {
@@ -3816,7 +3827,7 @@
 
 /* Landing */
 
-	body.landing #page-wrapper {
+	#landing {
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bg.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bg.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bg.jpg");
@@ -3825,7 +3836,10 @@
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		padding-top: 0;
+		padding: 0 0 0 0;
+		height: 100%;
+		text-align: center;
+		height: 100%;
 	}
 
 	body.landing #footer {
